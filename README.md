@@ -3,8 +3,7 @@
 - 🔭 Trabalho com SQL banco de dados
 - 🌱 Estudando HTML, CSS, JS, PHP, MySQL
 - 💬 Me contate via email: renanryuakame@gmail.com
-- 😄 Pronouns: Ele/dele
-- ⚡ Fun fact: ...
+- 😄 20 anos 
 <div align="center">
   <a href="https://github.com/rafaballerini">
   <img width="48%"  src="https://github-readme-stats.vercel.app/api?username=HiRenan&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
