@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 - 🔭 Trabalhando com SQL banco de dados
-- 🌱 Estudando HTML, CSS, JS, PHP, MySQL
+- 🌱 Estudando HTML, CSS, JS, PHP, SQL, PYTHON e Java.
 - 💬 Me contate via email: renanryuakame@gmail.com
 - 😄 20 anos 
 <div align="center">
