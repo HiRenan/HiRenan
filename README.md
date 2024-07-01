@@ -1,9 +1,9 @@
 ### Hi there 👋
 
-- 🔭 Trabalhando com SQL banco de dados
-- 🌱 Estudando HTML, CSS, JS, PHP, SQL, PYTHON e Java.
+- 🔭 Trabalhando com SQL banco de dados.
+- 🌱 Estudando ReactJS, NextJS.
 - 💬 Me contate via email: renanryuakame@gmail.com
-- 😄 20 anos 
+- 😄 22 anos 
 <div align="center">
   <a href="https://github.com/HiRenan">
   <img width="48%"  src="https://github-readme-stats.vercel.app/api?username=HiRenan&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
