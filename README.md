@@ -1,10 +1,6 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/HiRenan/HiRenan/main/banner-exemplo.png" alt="Banner do Perfil de Renan Mocelin"/>
-</div>
+### Bem vindo! Me chamo Renan! 👋
 
-### Olá, eu sou o Renan! 👋
-
-Desenvolvedor focado em aprimorar minhas habilidades com o ecossistema JavaScript. Atualmente, estou trabalhando com **Inteligência Artificial** e aprofundando meus estudos em **React** e **Next.js** para construir aplicações web modernas e eficientes.
+Sou desenvolvedor com foco em especialização em Inteligência Artificial. Atualmente, estou trabalhando com **IA** e aprofundando meus estudos em **React** e **Next.js** para construir aplicações web modernas e eficientes.
 
 Estou sempre aberto a novos desafios e oportunidades de aprendizado!
 
