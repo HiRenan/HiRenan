@@ -32,7 +32,7 @@ Estou sempre aberto a novos desafios e oportunidades de aprendizado!
 
 ## 📊 Minhas Estatísticas
 <div align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=HiRenan&show_icons=true&theme=transparent&bg_color=00000000&icon_color=30A3DC&title_color=30A3DC&text_color=FFF&include_all_commits=true&count_private=true"/>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=HiRenan&show_icons=true&theme=transparent&bg_color=00000000&icon_color=30A3DC&title_color=30A3DC&text_color=FFF"/>
   <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HiRenan&layout=compact&langs_count=7&theme=transparent&bg_color=00000000&title_color=30A3DC&text_color=FFF"/>
 </div>
 
