@@ -1,0 +1,63 @@
+# Keeps the "Recent posts" lists in README.md (EN) and README.pt-BR.md (PT) in sync
+# with the maib.com.br RSS feeds. One bot commit per change, none when nothing moved.
+name: Blog posts
+
+on:
+  schedule:
+    - cron: "17 9 * * *" # daily, 06:17 in Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog-posts
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Both steps write the files only (skip_commit); the last step makes a single
+      # commit. enable_keepalive stays off: no dummy commits.
+      - name: Posts (EN)
+        uses: gautamkrishnar/blog-post-workflow@f177491c77670f150ab4e9b9890254d8eba4164b # 1.9.7
+        with:
+          feed_list: "https://www.maib.com.br/api/rss/en.xml"
+          readme_path: "./README.md"
+          max_post_count: 3
+          template: "- <samp>$date</samp>&nbsp; [$title]($url)$newline"
+          date_format: "UTC:yyyy-mm-dd"
+          tag_post_pre_newline: true
+          skip_commit: true
+          enable_keepalive: false
+          retry_count: 3
+
+      - name: Posts (PT)
+        uses: gautamkrishnar/blog-post-workflow@f177491c77670f150ab4e9b9890254d8eba4164b # 1.9.7
+        with:
+          feed_list: "https://www.maib.com.br/api/rss/pt.xml"
+          readme_path: "./README.pt-BR.md"
+          max_post_count: 3
+          template: "- <samp>$date</samp>&nbsp; [$title]($url)$newline"
+          date_format: "UTC:yyyy-mm-dd"
+          tag_post_pre_newline: true
+          skip_commit: true
+          enable_keepalive: false
+          retry_count: 3
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md README.pt-BR.md; then
+            echo "No new posts."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md README.pt-BR.md
+          git commit -m "docs(readme): sync recent blog posts"
+          git pull --rebase --autostash
+          git push
